@@ -1,0 +1,14 @@
+c:\users\anoop.chaudhary\documents\visual studio 2017\Projects\WpfApp_day2\WpfApp_day2\bin\Debug\WpfApp_day2.exe.config
+c:\users\anoop.chaudhary\documents\visual studio 2017\Projects\WpfApp_day2\WpfApp_day2\bin\Debug\WpfApp_day2.exe
+c:\users\anoop.chaudhary\documents\visual studio 2017\Projects\WpfApp_day2\WpfApp_day2\bin\Debug\WpfApp_day2.pdb
+c:\users\anoop.chaudhary\documents\visual studio 2017\Projects\WpfApp_day2\WpfApp_day2\obj\Debug\WpfApp_day2.csprojResolveAssemblyReference.cache
+c:\users\anoop.chaudhary\documents\visual studio 2017\Projects\WpfApp_day2\WpfApp_day2\obj\Debug\MainWindow.g.cs
+c:\users\anoop.chaudhary\documents\visual studio 2017\Projects\WpfApp_day2\WpfApp_day2\obj\Debug\App.g.cs
+c:\users\anoop.chaudhary\documents\visual studio 2017\Projects\WpfApp_day2\WpfApp_day2\obj\Debug\WpfApp_day2_MarkupCompile.cache
+c:\users\anoop.chaudhary\documents\visual studio 2017\Projects\WpfApp_day2\WpfApp_day2\obj\Debug\WpfApp_day2_MarkupCompile.lref
+c:\users\anoop.chaudhary\documents\visual studio 2017\Projects\WpfApp_day2\WpfApp_day2\obj\Debug\MainWindow.baml
+c:\users\anoop.chaudhary\documents\visual studio 2017\Projects\WpfApp_day2\WpfApp_day2\obj\Debug\WpfApp_day2.g.resources
+c:\users\anoop.chaudhary\documents\visual studio 2017\Projects\WpfApp_day2\WpfApp_day2\obj\Debug\WpfApp_day2.Properties.Resources.resources
+c:\users\anoop.chaudhary\documents\visual studio 2017\Projects\WpfApp_day2\WpfApp_day2\obj\Debug\WpfApp_day2.csproj.GenerateResource.Cache
+c:\users\anoop.chaudhary\documents\visual studio 2017\Projects\WpfApp_day2\WpfApp_day2\obj\Debug\WpfApp_day2.exe
+c:\users\anoop.chaudhary\documents\visual studio 2017\Projects\WpfApp_day2\WpfApp_day2\obj\Debug\WpfApp_day2.pdb

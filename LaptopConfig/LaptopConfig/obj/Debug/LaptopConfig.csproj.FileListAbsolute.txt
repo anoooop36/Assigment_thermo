@@ -1,0 +1,6 @@
+c:\users\anoop.chaudhary\documents\visual studio 2017\Projects\LaptopConfig\LaptopConfig\obj\Debug\LaptopConfig.csprojResolveAssemblyReference.cache
+c:\users\anoop.chaudhary\documents\visual studio 2017\Projects\LaptopConfig\LaptopConfig\bin\Debug\LaptopConfig.exe.config
+c:\users\anoop.chaudhary\documents\visual studio 2017\Projects\LaptopConfig\LaptopConfig\bin\Debug\LaptopConfig.exe
+c:\users\anoop.chaudhary\documents\visual studio 2017\Projects\LaptopConfig\LaptopConfig\bin\Debug\LaptopConfig.pdb
+c:\users\anoop.chaudhary\documents\visual studio 2017\Projects\LaptopConfig\LaptopConfig\obj\Debug\LaptopConfig.exe
+c:\users\anoop.chaudhary\documents\visual studio 2017\Projects\LaptopConfig\LaptopConfig\obj\Debug\LaptopConfig.pdb

@@ -1,0 +1,11 @@
+c:\users\anoop.chaudhary\documents\visual studio 2017\Projects\Day9_SQlite\Day9_SQlite\bin\Debug\Day9_SQlite.exe.config
+c:\users\anoop.chaudhary\documents\visual studio 2017\Projects\Day9_SQlite\Day9_SQlite\bin\Debug\Day9_SQlite.exe
+c:\users\anoop.chaudhary\documents\visual studio 2017\Projects\Day9_SQlite\Day9_SQlite\bin\Debug\Day9_SQlite.pdb
+c:\users\anoop.chaudhary\documents\visual studio 2017\Projects\Day9_SQlite\Day9_SQlite\bin\Debug\Dapper.dll
+c:\users\anoop.chaudhary\documents\visual studio 2017\Projects\Day9_SQlite\Day9_SQlite\bin\Debug\System.Data.SQLite.dll
+c:\users\anoop.chaudhary\documents\visual studio 2017\Projects\Day9_SQlite\Day9_SQlite\bin\Debug\Dapper.xml
+c:\users\anoop.chaudhary\documents\visual studio 2017\Projects\Day9_SQlite\Day9_SQlite\bin\Debug\System.Data.SQLite.xml
+c:\users\anoop.chaudhary\documents\visual studio 2017\Projects\Day9_SQlite\Day9_SQlite\bin\Debug\System.Data.SQLite.dll.config
+c:\users\anoop.chaudhary\documents\visual studio 2017\Projects\Day9_SQlite\Day9_SQlite\obj\Debug\Day9_SQlite.csprojResolveAssemblyReference.cache
+c:\users\anoop.chaudhary\documents\visual studio 2017\Projects\Day9_SQlite\Day9_SQlite\obj\Debug\Day9_SQlite.exe
+c:\users\anoop.chaudhary\documents\visual studio 2017\Projects\Day9_SQlite\Day9_SQlite\obj\Debug\Day9_SQlite.pdb

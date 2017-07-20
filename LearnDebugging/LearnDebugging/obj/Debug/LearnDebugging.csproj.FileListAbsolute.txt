@@ -1,0 +1,6 @@
+c:\users\anoop.chaudhary\documents\visual studio 2017\Projects\LearnDebugging\LearnDebugging\bin\Debug\LearnDebugging.exe.config
+c:\users\anoop.chaudhary\documents\visual studio 2017\Projects\LearnDebugging\LearnDebugging\bin\Debug\LearnDebugging.exe
+c:\users\anoop.chaudhary\documents\visual studio 2017\Projects\LearnDebugging\LearnDebugging\bin\Debug\LearnDebugging.pdb
+c:\users\anoop.chaudhary\documents\visual studio 2017\Projects\LearnDebugging\LearnDebugging\obj\Debug\LearnDebugging.csprojResolveAssemblyReference.cache
+c:\users\anoop.chaudhary\documents\visual studio 2017\Projects\LearnDebugging\LearnDebugging\obj\Debug\LearnDebugging.exe
+c:\users\anoop.chaudhary\documents\visual studio 2017\Projects\LearnDebugging\LearnDebugging\obj\Debug\LearnDebugging.pdb

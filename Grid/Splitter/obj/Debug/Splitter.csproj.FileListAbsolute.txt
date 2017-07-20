@@ -1,0 +1,13 @@
+c:\Users\anoop.chaudhary\documents\visual studio 2017\Projects\Grid\Splitter\bin\Debug\Splitter.exe.config
+c:\Users\anoop.chaudhary\documents\visual studio 2017\Projects\Grid\Splitter\bin\Debug\Splitter.exe
+c:\Users\anoop.chaudhary\documents\visual studio 2017\Projects\Grid\Splitter\bin\Debug\Splitter.pdb
+c:\Users\anoop.chaudhary\documents\visual studio 2017\Projects\Grid\Splitter\obj\Debug\MainWindow.g.cs
+c:\Users\anoop.chaudhary\documents\visual studio 2017\Projects\Grid\Splitter\obj\Debug\App.g.cs
+c:\Users\anoop.chaudhary\documents\visual studio 2017\Projects\Grid\Splitter\obj\Debug\Splitter_MarkupCompile.cache
+c:\Users\anoop.chaudhary\documents\visual studio 2017\Projects\Grid\Splitter\obj\Debug\Splitter_MarkupCompile.lref
+c:\Users\anoop.chaudhary\documents\visual studio 2017\Projects\Grid\Splitter\obj\Debug\MainWindow.baml
+c:\Users\anoop.chaudhary\documents\visual studio 2017\Projects\Grid\Splitter\obj\Debug\Splitter.g.resources
+c:\Users\anoop.chaudhary\documents\visual studio 2017\Projects\Grid\Splitter\obj\Debug\Splitter.Properties.Resources.resources
+c:\Users\anoop.chaudhary\documents\visual studio 2017\Projects\Grid\Splitter\obj\Debug\Splitter.csproj.GenerateResource.Cache
+c:\Users\anoop.chaudhary\documents\visual studio 2017\Projects\Grid\Splitter\obj\Debug\Splitter.exe
+c:\Users\anoop.chaudhary\documents\visual studio 2017\Projects\Grid\Splitter\obj\Debug\Splitter.pdb

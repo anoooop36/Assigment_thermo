@@ -1,0 +1,7 @@
+c:\users\anoop.chaudhary\documents\visual studio 2017\Projects\ReadFile\ReadFile\bin\Debug\ReadFile.exe.config
+c:\users\anoop.chaudhary\documents\visual studio 2017\Projects\ReadFile\ReadFile\bin\Debug\ReadFile.exe
+c:\users\anoop.chaudhary\documents\visual studio 2017\Projects\ReadFile\ReadFile\bin\Debug\ReadFile.pdb
+c:\users\anoop.chaudhary\documents\visual studio 2017\Projects\ReadFile\ReadFile\obj\Debug\ReadFile.csprojResolveAssemblyReference.cache
+c:\users\anoop.chaudhary\documents\visual studio 2017\Projects\ReadFile\ReadFile\obj\Debug\ReadFile.exe
+c:\users\anoop.chaudhary\documents\visual studio 2017\Projects\ReadFile\ReadFile\obj\Debug\ReadFile.pdb
+c:\users\anoop.chaudhary\documents\visual studio 2017\Projects\ReadFile\ReadFile\bin\Debug\Values.txt

@@ -1,0 +1,14 @@
+c:\users\anoop.chaudhary\documents\visual studio 2017\Projects\Grid\Grid\bin\Debug\Grid.exe.config
+c:\users\anoop.chaudhary\documents\visual studio 2017\Projects\Grid\Grid\bin\Debug\Grid.exe
+c:\users\anoop.chaudhary\documents\visual studio 2017\Projects\Grid\Grid\bin\Debug\Grid.pdb
+c:\users\anoop.chaudhary\documents\visual studio 2017\Projects\Grid\Grid\obj\Debug\Grid.csprojResolveAssemblyReference.cache
+c:\users\anoop.chaudhary\documents\visual studio 2017\Projects\Grid\Grid\obj\Debug\MainWindow.g.cs
+c:\users\anoop.chaudhary\documents\visual studio 2017\Projects\Grid\Grid\obj\Debug\App.g.cs
+c:\users\anoop.chaudhary\documents\visual studio 2017\Projects\Grid\Grid\obj\Debug\Grid_MarkupCompile.cache
+c:\users\anoop.chaudhary\documents\visual studio 2017\Projects\Grid\Grid\obj\Debug\Grid_MarkupCompile.lref
+c:\users\anoop.chaudhary\documents\visual studio 2017\Projects\Grid\Grid\obj\Debug\MainWindow.baml
+c:\users\anoop.chaudhary\documents\visual studio 2017\Projects\Grid\Grid\obj\Debug\Grid.g.resources
+c:\users\anoop.chaudhary\documents\visual studio 2017\Projects\Grid\Grid\obj\Debug\Grid.Properties.Resources.resources
+c:\users\anoop.chaudhary\documents\visual studio 2017\Projects\Grid\Grid\obj\Debug\Grid.csproj.GenerateResource.Cache
+c:\users\anoop.chaudhary\documents\visual studio 2017\Projects\Grid\Grid\obj\Debug\Grid.exe
+c:\users\anoop.chaudhary\documents\visual studio 2017\Projects\Grid\Grid\obj\Debug\Grid.pdb
