@@ -20,6 +20,29 @@ namespace AddressBook.ViewModel
         public string EmployeeId { get; set; }
         public string MyProperty { get { return ""; } set { } }
 
+        public string TextBox1 { get; set; }
+        public string TextBox2 { get; set; }
+        public string TextBox3 { get; set; }
+        public string TextBox4 { get; set; }
+
+        private AddressBookModel _selectedEmployee;
+
+        public AddressBookModel SelectedEmployee
+        {
+            get
+            {
+                return _selectedEmployee;
+            }
+
+            set
+            {
+                _selectedEmployee = value;
+                //DeleteCommand.RaiseCanExecuteChanged();
+            }
+        }
+
+        public string TextClear { get; set; }
+
         public AddressBookViewModel()
         {
             EmpList = new ObservableCollection<AddressBookModel>();
@@ -28,8 +51,8 @@ namespace AddressBook.ViewModel
             AddressBookModel model3 = new AddressBookModel("Atul", "gdf", "4", "9945");
             EmpList.Add(model3);
             AddCommand = new RelayCommand(AddName, CanAddExecute);
-            ClearCommand = new RelayCommand(Clear, CanAddExecute);
-
+            ClearCommand = new RelayCommand(Clear, CanClearExecute);
+            DeleteCommand = new RelayCommand(delete,CanDeleteExecute);
 
         }
 
@@ -38,6 +61,7 @@ namespace AddressBook.ViewModel
      
         private ICommand addCommand;
         private ICommand clearCommand;
+        private ICommand deleteCommand;
         #endregion
 
         #region Properties
@@ -54,6 +78,12 @@ namespace AddressBook.ViewModel
         {
             get { return clearCommand; }
             set { clearCommand = value; NotifyPropertyChanged("ClearCommand"); }
+        }
+
+        public ICommand DeleteCommand
+        {
+            get { return deleteCommand; }
+            set { deleteCommand = value; NotifyPropertyChanged("DeleteCommand"); }
         }
         #endregion
 
@@ -80,6 +110,14 @@ namespace AddressBook.ViewModel
         {
             return true;
         }
+        private bool CanClearExecute(object param)
+        {
+            return true;
+        }
+        private bool CanDeleteExecute(object param)
+        {
+            return true;
+        }
 
         private void AddName(object param)
         {
@@ -93,10 +131,14 @@ namespace AddressBook.ViewModel
 
         private void Clear(object param) {
 
-            MyProperty="";
-          
 
 
+            TextClear = string.Empty;
+
+        }
+
+        private void delete(object param) {
+            EmpList.Remove(SelectedEmployee);
         }
 
         //There is something called CommandParameter
