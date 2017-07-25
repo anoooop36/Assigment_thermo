@@ -6,6 +6,7 @@ using AddressBook.Commands;
 using System.Linq;
 using System.Text;
 using System.Windows.Input;
+using System.Windows;
 
 namespace AddressBook.ViewModel
 {
@@ -14,16 +15,15 @@ namespace AddressBook.ViewModel
 
         public ObservableCollection<AddressBookModel> EmpList { get { return empList; } set { empList = value; } }
         public ObservableCollection<AddressBookModel> empList ;
-        public string Name { get; set; }
-        public string Address { get; set; }
-        public string PhoneNo { get; set; }
-        public string EmployeeId { get; set; }
-        public string MyProperty { get { return ""; } set { } }
+ 
+
 
         public string TextBox1 { get; set; }
         public string TextBox2 { get; set; }
         public string TextBox3 { get; set; }
         public string TextBox4 { get; set; }
+
+        public string Path { get; set; }
 
         private AddressBookModel _selectedEmployee;
 
@@ -37,6 +37,18 @@ namespace AddressBook.ViewModel
             set
             {
                 _selectedEmployee = value;
+                if (value != null) {
+                    TextBox1 = SelectedEmployee.Name;
+                    TextBox2 = SelectedEmployee.EmployeeId;
+                    TextBox3 = SelectedEmployee.Address;
+                    TextBox4 = SelectedEmployee.PhoneNo;
+                    Path = SelectedEmployee.ImagePath;
+                    NotifyPropertyChanged("TextBox1");
+                    NotifyPropertyChanged("TextBox3");
+                    NotifyPropertyChanged("TextBox4");
+                    NotifyPropertyChanged("TextBox2");
+                    NotifyPropertyChanged("Path");
+                }
                 //DeleteCommand.RaiseCanExecuteChanged();
             }
         }
@@ -47,8 +59,10 @@ namespace AddressBook.ViewModel
         {
             EmpList = new ObservableCollection<AddressBookModel>();
             AddressBookModel model2 = new AddressBookModel("Anoop", "df", "2", "8945");
-           EmpList.Add(model2);
+            model2.ImagePath = @"C:\Users\anoop.chaudhary\Documents\Visual Studio 2017\Projects\AddressBook\AddressBook\bin\Debug\images/download.png";
+            EmpList.Add(model2);
             AddressBookModel model3 = new AddressBookModel("Atul", "gdf", "4", "9945");
+            model3.ImagePath = @"C:\Users\anoop.chaudhary\Documents\Visual Studio 2017\Projects\AddressBook\AddressBook\bin\Debug\images/download1.png";
             EmpList.Add(model3);
             AddCommand = new RelayCommand(AddName, CanAddExecute);
             ClearCommand = new RelayCommand(Clear, CanClearExecute);
@@ -124,22 +138,32 @@ namespace AddressBook.ViewModel
             //Names.Add(string.Format("Name {0}", id));
             //id++;
             
-            AddressBookModel obj = new AddressBookModel("ajay","Banglore","22","6636");
+            AddressBookModel obj = new AddressBookModel(TextBox1,TextBox3,TextBox2,TextBox4);
             EmpList.Add(obj);
 
         }
 
         private void Clear(object param) {
 
-
-
-            TextClear = string.Empty;
-
+            TextBox1 = string.Empty;
+            TextBox2 = string.Empty;
+            TextBox3 = string.Empty;
+            TextBox4 = string.Empty;
+            Path = string.Empty;
+            NotifyPropertyChanged(TextBox1);
         }
 
         private void delete(object param) {
             EmpList.Remove(SelectedEmployee);
+            TextBox1 = string.Empty;
+            TextBox2 = string.Empty;
+            TextBox3 = string.Empty;
+            TextBox4 = string.Empty;
+            Path = string.Empty;
+            NotifyPropertyChanged(TextBox1);
         }
+
+        
 
         //There is something called CommandParameter
         //It is any property from the view that you want to pass as an input for your logic.

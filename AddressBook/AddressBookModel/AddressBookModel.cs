@@ -18,6 +18,6 @@ public class AddressBookModel
     public string Address { get; set; }
     public string EmployeeId { get; set; }
     public string PhoneNo { get; set; }
+    public string ImagePath { get; set; }
 
-    
 }
