@@ -130,12 +130,22 @@ namespace Day9_SQlite
                         String s = String.Format("{0,-15} {1,-20} {2,20}", uname, email, pass);
                         Console.WriteLine(s);
                     }
-                    
+
                     connect.Close();
+
                 }
+
+                //List<Employee> res = connect.Query<List<Employee>>(
+                //    @"SELECT *
+                //    FROM Employee");
+                //foreach (Employee result in res)
+                //{
+                //    String s = String.Format("{0,-15} {1,-20} {2,20}", result.Username, result.Email, result.Password);
+                //    Console.WriteLine(s);
+                //}
             }
 
-            }
+        }
 
 
     }

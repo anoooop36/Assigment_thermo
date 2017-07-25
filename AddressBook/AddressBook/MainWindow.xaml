@@ -1,0 +1,43 @@
+﻿<Window x:Class="AddressBook.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AddressBook"
+        xmlns:dc="clr-namespace:AddressBook.ViewModel;assembly=AddressBookViewModel"
+        xmlns:prop="clr-namespace:AddressBook.Properties"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525" DataContext="{Binding AddressBookViewModel}">
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <!--<Image Margin="24,10,23,245" Source="C:\Users\anoop.chaudhary\Documents\Visual Studio 2017\Projects\AddressBook\AddressBook\bin\Debug\images/download.png" Width="100"/>-->
+        <ListBox Name="employeeList" HorizontalAlignment="Left" Width="148" Margin="0,131,0,23" ItemsSource="{Binding EmpList,UpdateSourceTrigger=PropertyChanged}" DisplayMemberPath="Name">
+        </ListBox>
+
+
+        <!--<Image Grid.Column="1" Margin="0,0,0,170" Source="C:\Users\anoop.chaudhary\Documents\Visual Studio 2017\Projects\AddressBook\AddressBook\bin\Debug\images/download.png"/>-->
+        <Button Grid.Column="1" Content="New User" Margin="49,199,77,88" Width="75" RenderTransformOrigin="0.839,9.463" Command="{Binding ClearCommand }"/>
+        <Button Grid.Column="1" Margin="34,237,63,49" Width="75"  Content="Add User" Command="{Binding AddCommand }"/>
+        <Button Grid.Column="1" Content="Delete User" Width="75" Margin="34,276,63,11"/>
+        <StackPanel Grid.Column="2" Orientation="Vertical">
+            <TextBlock Name="txtName"  Text="Name:" />
+            <TextBox Text="{Binding ElementName=employeeList, Path=SelectedItem.Name}" />
+            <TextBlock Text="Employee Id"/>
+            <TextBox Text="{Binding ElementName=employeeList, Path=SelectedItem.EmployeeId}" />
+            <TextBlock Text="Address"/>
+            <TextBox Text="{Binding ElementName=employeeList, Path=SelectedItem.Address}" />
+            <TextBlock Text="Phone Number"/>
+            <TextBox Text="{Binding ElementName=employeeList, Path=SelectedItem.PhoneNo}" />
+           
+
+
+        </StackPanel>
+
+
+    </Grid>
+</Window>
