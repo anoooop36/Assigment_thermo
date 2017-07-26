@@ -12,6 +12,7 @@ public class AddressBookModel
         Address = a;
         EmployeeId = e;
         PhoneNo = p;
+        ImagePath= @"C:\Users\anoop.chaudhary\Documents\Visual Studio 2017\Projects\AddressBook\AddressBook\bin\Debug\images/download.png";
     }
 
     public string Name { get; set; }

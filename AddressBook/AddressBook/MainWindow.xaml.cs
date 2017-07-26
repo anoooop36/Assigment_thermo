@@ -1,8 +1,10 @@
 ﻿using AddressBook.ViewModel;
 using Microsoft.Win32;
 using System.Windows;
+using System.Windows.Data;
 using System.Windows.Input;
 using System.Windows.Media.Imaging;
+using AddressBook;
 
 namespace AddressBook
 {
@@ -33,8 +35,12 @@ namespace AddressBook
             {
 
                 // image file path
-                img.Source = new BitmapImage(new System.Uri(open.FileName));
-                
+               // img.Source = new BitmapImage(new System.Uri(open.FileName));
+
+                ((AddressBookViewModel)(this.DataContext)).SelectedEmployee.ImagePath = open.FileName;
+
+
+               
 
 
             }

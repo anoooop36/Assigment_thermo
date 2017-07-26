@@ -8,20 +8,81 @@ using System.Text;
 using System.Windows.Input;
 using System.Windows;
 
-namespace AddressBook.ViewModel
+namespace AddressBook.ViewModel 
 {
     public class AddressBookViewModel : INotifyPropertyChanged
     {
 
         public ObservableCollection<AddressBookModel> EmpList { get { return empList; } set { empList = value; } }
         public ObservableCollection<AddressBookModel> empList ;
- 
 
+        private string textBox1;
 
-        public string TextBox1 { get; set; }
-        public string TextBox2 { get; set; }
-        public string TextBox3 { get; set; }
-        public string TextBox4 { get; set; }
+        public string TextBox1 {
+            get {
+                    return textBox1;
+            }
+            set {
+                    textBox1 = value;
+                if (textBox1!=string.Empty)
+                    SelectedEmployee.Name = textBox1;
+                NotifyPropertyChanged("EmpList");
+                NotifyPropertyChanged("TextBox1");
+            }
+        }
+        private string textBox2;
+
+        public string TextBox2
+        {
+            get
+            {
+                return textBox2;
+            }
+            set
+            {
+                textBox2 = value;
+                if (textBox2 != string.Empty)
+                    SelectedEmployee.EmployeeId = textBox2;
+                NotifyPropertyChanged("EmpList");
+                NotifyPropertyChanged("TextBox2");
+            }
+        }
+
+        private string textBox3;
+
+        public string TextBox3
+        {
+            get
+            {
+                return textBox3;
+            }
+            set
+            {
+                textBox3 = value;
+                if (textBox3 != string.Empty)
+                    SelectedEmployee.Address = textBox3;
+                NotifyPropertyChanged("EmpList");
+                NotifyPropertyChanged("TextBox3");
+            }
+        }
+
+        private string textBox4;
+
+        public string TextBox4
+        {
+            get
+            {
+                return textBox4;
+            }
+            set
+            {
+                textBox4 = value;
+                if (textBox4 != string.Empty)
+                    SelectedEmployee.PhoneNo = textBox4;
+                NotifyPropertyChanged("EmpList");
+                NotifyPropertyChanged("TextBox4");
+            }
+        }
 
         public string Path { get; set; }
 
@@ -105,7 +166,7 @@ namespace AddressBook.ViewModel
 
         public event PropertyChangedEventHandler PropertyChanged;
 
-        private void NotifyPropertyChanged(string propertyName)
+        public void NotifyPropertyChanged(string propertyName)
         {
             if (PropertyChanged != null)
             {

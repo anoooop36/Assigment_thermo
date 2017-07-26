@@ -8,35 +8,35 @@
         xmlns:prop="clr-namespace:AddressBook.Properties"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525" DataContext="{Binding AddressBookViewModel}">
-    
+
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto" />
             <ColumnDefinition Width="200"/>
             <ColumnDefinition Width="Auto"/>
         </Grid.ColumnDefinitions>
-        <!--<Image Margin="24,10,23,245" Source="C:\Users\anoop.chaudhary\Documents\Visual Studio 2017\Projects\AddressBook\AddressBook\bin\Debug\images/download.png" Width="100"/>-->
-        <ListBox Name="employeeList" HorizontalAlignment="Left" Width="148" Margin="0,131,0,23" ItemsSource="{Binding EmpList,UpdateSourceTrigger=PropertyChanged}" DisplayMemberPath="Name" SelectedItem = "{Binding SelectedEmployee}">
+        <Image Margin="0,0,55,249" Source="C:\Users\anoop.chaudhary\Documents\Visual Studio 2017\Projects\AddressBook\AddressBook\bin\Debug\images/download 4.png"/>
+        <ListBox Name="employeeList" HorizontalAlignment="Left" Width="148" Margin="0,131,0,23" ItemsSource="{Binding EmpList,UpdateSourceTrigger=PropertyChanged}" DisplayMemberPath="Name" SelectedItem = "{Binding SelectedEmployee, UpdateSourceTrigger=PropertyChanged}">
         </ListBox>
 
 
 
-        <Image Name="img" Grid.Column="1" Margin="0,0,0,170" Source="{Binding Path, UpdateSourceTrigger=PropertyChanged}" MouseUp="imageFoo_MouseUp"/>
-       
+        <Image  Name="img" Grid.Column="1" Margin="0,0,0,170" Source="{Binding Path, UpdateSourceTrigger=PropertyChanged}" MouseUp="imageFoo_MouseUp"/>
 
-            <Button x:Name="newUser" Grid.Column="1" Content="New User" Margin="49,199,77,88" Width="75" RenderTransformOrigin="0.839,9.463" Command="{Binding ClearCommand }"/>
+
+        <Button x:Name="newUser" Grid.Column="1" Content="New User" Margin="49,199,77,88" Width="75" RenderTransformOrigin="0.839,9.463" Command="{Binding ClearCommand }"/>
         <Button Grid.Column="1" Margin="34,237,63,49" Width="75"  Content="Add User" Command="{Binding AddCommand }"/>
         <Button Grid.Column="1" Content="Delete User" Width="75" Margin="34,276,63,11" Command = "{Binding DeleteCommand}" />
         <StackPanel Grid.Column="2" Orientation="Vertical">
             <TextBlock Name="txtName"  Text="Name:" />
-            <TextBox Text="{Binding TextBox1,UpdateSourceTrigger=PropertyChanged }"/>
+            <TextBox Text="{Binding TextBox1,UpdateSourceTrigger=PropertyChanged}"/>
             <TextBlock Text="Employee Id"/>
             <TextBox Text="{Binding TextBox2,UpdateSourceTrigger=PropertyChanged}" />
             <TextBlock Text="Address"/>
             <TextBox Text="{Binding TextBox3,UpdateSourceTrigger=PropertyChanged}" />
             <TextBlock Text="Phone Number"/>
             <TextBox Text="{Binding TextBox4,UpdateSourceTrigger=PropertyChanged}" />
-           
+
 
 
         </StackPanel>
