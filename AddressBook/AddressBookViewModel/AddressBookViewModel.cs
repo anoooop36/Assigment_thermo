@@ -24,7 +24,7 @@ namespace AddressBook.ViewModel
             }
             set {
                     textBox1 = value;
-                if (textBox1!=string.Empty)
+                if (textBox1!=string.Empty && SelectedEmployee!=null)
                     SelectedEmployee.Name = textBox1;
                 NotifyPropertyChanged("EmpList");
                 NotifyPropertyChanged("TextBox1");
@@ -41,7 +41,7 @@ namespace AddressBook.ViewModel
             set
             {
                 textBox2 = value;
-                if (textBox2 != string.Empty)
+                if (textBox2 != string.Empty && SelectedEmployee != null)
                     SelectedEmployee.EmployeeId = textBox2;
                 NotifyPropertyChanged("EmpList");
                 NotifyPropertyChanged("TextBox2");
@@ -59,7 +59,7 @@ namespace AddressBook.ViewModel
             set
             {
                 textBox3 = value;
-                if (textBox3 != string.Empty)
+                if (textBox3 != string.Empty && SelectedEmployee != null)
                     SelectedEmployee.Address = textBox3;
                 NotifyPropertyChanged("EmpList");
                 NotifyPropertyChanged("TextBox3");
@@ -77,7 +77,7 @@ namespace AddressBook.ViewModel
             set
             {
                 textBox4 = value;
-                if (textBox4 != string.Empty)
+                if (textBox4 != string.Empty && SelectedEmployee != null)
                     SelectedEmployee.PhoneNo = textBox4;
                 NotifyPropertyChanged("EmpList");
                 NotifyPropertyChanged("TextBox4");
