@@ -26,8 +26,7 @@ namespace AddressBook.ViewModel
                     textBox1 = value;
                 if (textBox1!=string.Empty && SelectedEmployee!=null)
                     SelectedEmployee.Name = textBox1;
-                NotifyPropertyChanged("EmpList");
-                NotifyPropertyChanged("TextBox1");
+                
             }
         }
         private string textBox2;
@@ -43,8 +42,7 @@ namespace AddressBook.ViewModel
                 textBox2 = value;
                 if (textBox2 != string.Empty && SelectedEmployee != null)
                     SelectedEmployee.EmployeeId = textBox2;
-                NotifyPropertyChanged("EmpList");
-                NotifyPropertyChanged("TextBox2");
+                
             }
         }
 
@@ -61,8 +59,7 @@ namespace AddressBook.ViewModel
                 textBox3 = value;
                 if (textBox3 != string.Empty && SelectedEmployee != null)
                     SelectedEmployee.Address = textBox3;
-                NotifyPropertyChanged("EmpList");
-                NotifyPropertyChanged("TextBox3");
+                
             }
         }
 
@@ -211,6 +208,9 @@ namespace AddressBook.ViewModel
             TextBox3 = string.Empty;
             TextBox4 = string.Empty;
             Path = string.Empty;
+            AddressBookModel model = new AddressBookModel("","","","");
+            //empList.Add(model);
+            SelectedEmployee = model;
             NotifyPropertyChanged(TextBox1);
         }
 
