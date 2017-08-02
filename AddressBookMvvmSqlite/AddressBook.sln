@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddressBookView", "AddressBook\AddressBookView.csproj", "{F7DB0C63-80F9-4C6C-B614-13D3DFC126ED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C9ABBCC7-2724-4136-8247-94E7FF6B1083}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddressBookModel", "AddressBookModel\AddressBookModel.csproj", "{BE108E15-5493-42FA-A8E2-3BA4CB3D5770}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddressBookViewModel", "AddressBookViewModel\AddressBookViewModel.csproj", "{3E86E8E2-9FA3-40C7-8E41-F254CADD6129}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F7DB0C63-80F9-4C6C-B614-13D3DFC126ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7DB0C63-80F9-4C6C-B614-13D3DFC126ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7DB0C63-80F9-4C6C-B614-13D3DFC126ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7DB0C63-80F9-4C6C-B614-13D3DFC126ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE108E15-5493-42FA-A8E2-3BA4CB3D5770}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE108E15-5493-42FA-A8E2-3BA4CB3D5770}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE108E15-5493-42FA-A8E2-3BA4CB3D5770}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE108E15-5493-42FA-A8E2-3BA4CB3D5770}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E86E8E2-9FA3-40C7-8E41-F254CADD6129}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E86E8E2-9FA3-40C7-8E41-F254CADD6129}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E86E8E2-9FA3-40C7-8E41-F254CADD6129}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E86E8E2-9FA3-40C7-8E41-F254CADD6129}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
