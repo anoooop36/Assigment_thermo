@@ -6,6 +6,7 @@ using AddressBook.Commands;
 using System.Linq;
 using System.Text;
 using System.Windows.Input;
+using AddressBook.Model;
 using System.Windows;
 
 namespace AddressBook.ViewModel 
@@ -116,11 +117,16 @@ namespace AddressBook.ViewModel
         {
             EmpList = new ObservableCollection<AddressBookModel>();
             AddressBookModel model2 = new AddressBookModel("Anoop", "df", "2", "8945");
-            model2.ImagePath = @"C:\Users\anoop.chaudhary\Documents\Visual Studio 2017\Projects\AddressBook\AddressBook\bin\Debug\images/download.png";
-            EmpList.Add(model2);
+            //model2.ImagePath = @"C:\Users\anoop.chaudhary\Documents\Visual Studio 2017\Projects\AddressBook\AddressBook\bin\Debug\images/download.png";
+            //EmpList.Add(model2);
             AddressBookModel model3 = new AddressBookModel("Atul", "gdf", "4", "9945");
-            model3.ImagePath = @"C:\Users\anoop.chaudhary\Documents\Visual Studio 2017\Projects\AddressBook\AddressBook\bin\Debug\images/download1.png";
-            EmpList.Add(model3);
+            //model3.ImagePath = @"C:\Users\anoop.chaudhary\Documents\Visual Studio 2017\Projects\AddressBook\AddressBook\bin\Debug\images/download1.png";
+            //EmpList.Add(model3);
+            DbAction.CreateAndOpenDb();
+            DbAction.SeedDatabase();
+            DbAction.SaveNewEmp(model2);
+            DbAction.SaveNewEmp(model3);
+            EmpList = new ObservableCollection<AddressBookModel>(DbAction.GetAllEmployee());
             AddCommand = new RelayCommand(AddName, CanAddExecute);
             ClearCommand = new RelayCommand(Clear, CanClearExecute);
             DeleteCommand = new RelayCommand(delete,CanDeleteExecute);
@@ -196,7 +202,9 @@ namespace AddressBook.ViewModel
             //id++;
             
             AddressBookModel obj = new AddressBookModel(TextBox1,TextBox3,TextBox2,TextBox4);
-            EmpList.Add(obj);
+            DbAction.SaveNewEmp(obj);
+            EmpList = new ObservableCollection<AddressBookModel>(DbAction.GetAllEmployee());
+            NotifyPropertyChanged("EmpList");
 
         }
 
@@ -214,7 +222,9 @@ namespace AddressBook.ViewModel
         }
 
         private void delete(object param) {
-            EmpList.Remove(SelectedEmployee);
+            DbAction.DeleteOnId(SelectedEmployee);
+            EmpList = new ObservableCollection<AddressBookModel>(DbAction.GetAllEmployee());
+            // EmpList.Remove(SelectedEmployee);
             TextBox1 = string.Empty;
             TextBox2 = string.Empty;
             TextBox3 = string.Empty;
